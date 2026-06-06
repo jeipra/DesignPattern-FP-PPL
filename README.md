@@ -10,7 +10,7 @@
 
 # DESIGN PATTERN
 
-##1. Singleton Pattern
+## 1. Singleton Pattern
 
 Singleton Pattern diterapkan pada class `SessionManager` yang berfungsi untuk mengelola sesi pengguna yang sedang login. Tujuan penggunaan pattern ini adalah memastikan bahwa hanya ada satu objek `SessionManager` yang aktif selama program berjalan. Hal ini terlihat dari atribut static instance yang digunakan untuk menyimpan satu-satunya objek dari class tersebut serta constructor yang dibuat private sehingga objek tidak dapat dibuat langsung dari luar class.
 

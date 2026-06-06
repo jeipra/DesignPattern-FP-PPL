@@ -32,7 +32,7 @@ Penggunaan Singleton dilakukan melalui method `getInstance()` :
 SessionManager::getInstance();``
 
 
-##2. Factory Method Pattern
+## 2. Factory Method Pattern
 Factory Method Pattern diterapkan pada class `UserFactory` yang bertugas membuat objek pengguna sesuai dengan role yang dipilih. Pattern ini digunakan untuk menyembunyikan proses pembuatan objek sehingga client tidak perlu mengetahui detail constructor dari masing-masing class turunan User.
 
 ``class UserFactory {
@@ -62,7 +62,7 @@ Factory tersebut digunakan saat proses login:
         nama
     );``
 
-##3. Observer Pattern
+## 3. Observer Pattern
 Observer Pattern digunakan untuk memberikan notifikasi kepada pelanggan, UMKM, dan driver ketika status pesanan berubah. Pada pola ini, class Pesanan bertindak sebagai subject yang menyimpan daftar observer, sedangkan `CustomerNotification`, `UMKMNotification`, dan `DriverNotification` bertindak sebagai observer.
 
 ``class Observer {
@@ -107,7 +107,7 @@ pesanan.addObserver(
 pesanan.addObserver(
     &driver);``
 
-##4. Strategy Pattern
+## 4. Strategy Pattern
 
 Strategy Pattern digunakan untuk menangani berbagai metode pembayaran yang tersedia pada sistem. Pola ini memungkinkan algoritma pembayaran diganti secara dinamis sesuai pilihan pengguna tanpa mengubah struktur utama program.
 
@@ -163,7 +163,7 @@ pembayaran
 );``
 
 
-##5. State Pattern
+## 5. State Pattern
 State Pattern digunakan untuk mengelola perubahan status pesanan secara bertahap mulai dari menunggu pembayaran hingga pesanan selesai. Setiap status direpresentasikan oleh class yang berbeda sehingga perilaku masing-masing status dapat dipisahkan dengan jelas.
 
 ``class OrderState {
